@@ -1,6 +1,6 @@
 import React, { Component } from "react";
  import { connect } from "react-redux";
- import {Link} from 'react-router-dom';
+ import {NavLink} from 'react-router-dom';
 import './Favorites.css';
 import { removeMovieFavorite } from "../../actions";
 
@@ -9,14 +9,16 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div>
-        <h2>Películas Favoritas</h2>
+        <h1>Películas Favoritas</h1>
         <ul>
         {this.props.movies?.map(u =>
          <div key={u.id}>
-            <li><Link to='/movie/:id'>{u.Title}</Link> </li>
-            <button className="los" 
+             <NavLink to={`/movie/${u.imdbID}`} className='inactive' activeClassName="hola">
+            <div className="divsito"> <div className="p">{`  ${u.Title} `} </div> </div>
+            </NavLink>
+            <button className="botoncito" 
             onClick={() => this.props.removeMovieFavorite(u.id)} 
-            >X
+            >Remove
             </button>
             </div>
          )} 
