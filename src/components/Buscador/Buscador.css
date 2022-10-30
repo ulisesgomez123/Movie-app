@@ -1,4 +1,8 @@
+.p {
+margin-left: 20px;
+}
 .cnt {
+
     padding-top: 10px;
 }
 .form-container {
@@ -10,17 +14,44 @@
 .form-container button {
     margin-left: 20px;
 }
-.label {
+.div {
+    padding-top: 50px;
     padding-right: 10px;
+    margin-left: 400px;
+    font-size: 40px;
+    font-family: cursive;
+    color: rgb(210, 83, 9);
+}
+#title {
+    margin-left: 450px;
+    border-radius: 10px 10px 10px 10px;
+    height: 25px;
+    margin-top: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+.btn {
+    border-radius: 10px 10px 10px 10px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(58, 56, 56);
+    color: rgb(210, 83, 9);
+    border-color: black;
+    width: 90px;
+    height: 32px;
+    transition: all 300ms;
+}
+button:hover {
+    background-color: #27282a;
+    color:rgb(6, 163, 163);
 }
 .hola{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
-.los {
-    margin-right: 800px;
-}
+
 .inactive{
     color:black;
 }
@@ -42,4 +73,26 @@
     .los {
         margin-right: 0px;
 }
+}
+.los {
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 100px;
+    height: 60px;
+    margin-right: 500px;
+    font-size: 35px;
+    border:0px;
+    transition: all 400ms;
+    box-shadow: 10px 10px;
+}
+.divsito {
+    
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid rgb(210, 83, 9) 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 60px;
+    font-size: 35px
 }

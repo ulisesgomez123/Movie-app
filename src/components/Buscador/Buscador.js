@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { NavLink } from 'react-router-dom';
 import './Buscador.css';
 import {getMovies,addMovieFavorite} from '../../actions/';
+import { Popover } from "bootstrap";
 
 export class Buscador extends Component {
   constructor(props) {
@@ -23,28 +24,33 @@ export class Buscador extends Component {
     const {title}= this.state
     return (
       <div>
-        <h2>Buscador</h2>
         <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>
           <div>
-            <label className="label" htmlFor="title">Película: </label>
+            <div className="div">Search your movie here  </div>
             <input
               type="text"
               id="title"
               autoComplete="off"
               value={title}
               onChange={(e) => this.handleChange(e)}
+              placeholder='   title...'
             />
+                <button type="submit" className="btn">  Search  </button>
+           
           </div>
-          <button type="submit" > BUSCAR </button>
+    
         </form>
         <ul>
          {this.props.movies?.map( u =>
          <div key={u.imdbID} className='hola'>
            <NavLink to={`/movie/${u.imdbID}`} className='inactive' activeClassName="hola">
-            <li> {u.Title} </li>
+            <div className="divsito"> <div className="p">{`  ${u.Title} `} </div> </div>
             </NavLink>
+            
             <button className="los" 
-            onClick={() => this.props.addMovieFavorite({Title: u.Title, id: u.imdbID})} 
+            onClick={() => 
+              this.props.addMovieFavorite({Title: u.Title, id: u.imdbID})
+            } 
             >FAV
             </button>
             </div>
