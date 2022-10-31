@@ -1,5 +1,5 @@
-h1{
-    color: rgb(210, 83, 9);
+.favorites{
+    color: rgb(210, 83, 9) ;
     font-family: cursive;
     margin-left: 20px;
 }
@@ -15,11 +15,29 @@ body {
 .botoncito {
     margin-top: 20px;
     border-radius: 20px;
-    width: 200px;
-    height: 60px;
-    margin-right: 500px;
+    width: 170px;
+    height: 50px;
+    margin-right: 400px;
     font-size: 35px;
     border:0px;
     transition: all 400ms;
     box-shadow: 10px 10px;
+}
+.hola{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.divsito {
+    
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid rgb(210, 83, 9) 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 60px;
+    font-size: 35px
 }

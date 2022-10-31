@@ -23,8 +23,9 @@ let initialState = {
                     e.id !== action.payload )
             }
         case "GET_MOVIE_DETAIL":
-            return {...state,
-                movieDetail: action.payloads
+            return {
+                ...state,
+                movieDetail: action.payload
             }
       default: return state;
     }

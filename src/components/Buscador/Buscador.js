@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { NavLink } from 'react-router-dom';
 import './Buscador.css';
 import {getMovies,addMovieFavorite} from '../../actions/';
-import { Popover } from "bootstrap";
 
 export class Buscador extends Component {
   constructor(props) {
@@ -36,9 +35,13 @@ export class Buscador extends Component {
               placeholder='   title...'
             />
                 <button type="submit" className="btn">  Search  </button>
+
+                <div className="info">
+            Click on the name for more information
+          </div>
            
           </div>
-    
+        
         </form>
         <ul>
          {this.props.movies?.map( u =>

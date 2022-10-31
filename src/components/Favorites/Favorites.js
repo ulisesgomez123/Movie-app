@@ -9,11 +9,11 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div>
-        <h1>Películas Favoritas</h1>
+        <h1 className="favorites">Favorite movies</h1>
         <ul>
         {this.props.movies?.map(u =>
-         <div key={u.id}>
-             <NavLink to={`/movie/${u.imdbID}`} className='inactive' activeClassName="hola">
+         <div key={u.id} className='hola'>
+             <NavLink to={`/movie/${u.imdbID}`} >
             <div className="divsito"> <div className="p">{`  ${u.Title} `} </div> </div>
             </NavLink>
             <button className="botoncito" 

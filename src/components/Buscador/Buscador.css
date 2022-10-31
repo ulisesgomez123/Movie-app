@@ -34,7 +34,7 @@ margin-left: 20px;
     border-radius: 10px 10px 10px 10px;
     height: 30px;
     font-size: 20px;
-    background-color: rgb(58, 56, 56);
+    background-color: #27282a;
     color: rgb(210, 83, 9);
     border-color: black;
     width: 90px;
@@ -78,7 +78,7 @@ button:hover {
     margin-top: 20px;
     border-radius: 20px;
     width: 100px;
-    height: 60px;
+    height: 50px;
     margin-right: 500px;
     font-size: 35px;
     border:0px;
@@ -86,13 +86,22 @@ button:hover {
     box-shadow: 10px 10px;
 }
 .divsito {
-    
+    padding: 5px 0 5px 0;
     margin-top: 20px;
-    border-radius: 20px;
-    border: solid rgb(210, 83, 9) 2px;
+    border-radius: 30px;
+    border: 0px;
     display: flex;
     justify-content: space-between;
     width: 600px;
-    height: 60px;
-    font-size: 35px
+    height: fit-content;
+    font-size: 35px;
+    background-color: #27282a;
+}
+.info{
+margin-top: 20px;
+margin-left: 30px;
+color:rgb(210, 83, 9);
+font-size: 28px;
+font-family: cursive;
+
 }
