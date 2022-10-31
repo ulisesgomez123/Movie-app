@@ -4,9 +4,7 @@ import { getMovieDetail } from '../../actions/index';
 import css from './Movie.module.css';
 
 class Movie extends React.Component {
-     constructor(props) {
-        super(props)
-     }
+    
 componentDidMount() {
     this.props.getMovieDetail(this.props.match.params.id)
 }

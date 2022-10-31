@@ -30,7 +30,7 @@ export class ConnectedList extends Component {
 
 const mapStateToProps= (state) => {
   return {
-    movies: state. moviesFavorites
+    movies: state.moviesFavorites
   }
 }
 
