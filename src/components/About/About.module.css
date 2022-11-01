@@ -1,4 +1,29 @@
 .hola {
-    background-color: black;
+    border: solid rgb(210, 83, 9) 2px;
+    border-radius: 20px;
+    width: 950px;
+    margin-left: 200px;
+    background-color: rgb(170, 226, 226);
+    height:fit-content;
+}
+.p {
+    font-family: 'Courier New', Courier, monospace;
     color:rgb(6, 163, 163);
+    font-weight: bold;
+    font-size: 35px;
+}
+img {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color:  rgb(210, 83, 9);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.ll {
+    display: flex;
 }

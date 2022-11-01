@@ -4,9 +4,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-img {
-    width: 50px;
-    height: 40px;
+.img {
+    width: 60px !important;
+    height: 50px !important;
+    margin-top: 15px;
 }
 .navbar {
     height: 56px;

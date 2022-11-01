@@ -1,14 +1,15 @@
 p {
     margin-top: 10px;
     margin-left: 20px;
-    font-size: 40px;
+    font-size: 50px;
     font-family: cursive;
     color: rgb(210, 83, 9);
 }
-h1{
+.hh{
     font-family: 'Courier New', Courier, monospace;
     color:  rgb(210, 83, 9);
     margin-top: 15px;
+    font-size: 40px;
 }
 .corazon{
     display: flex;
